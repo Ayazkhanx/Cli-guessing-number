@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 const randomNumber = Math.floor(Math.random() * 10) + 1;
 let guessNumber = await inquirer.prompt([
     {
-        message: "guess a number",
+        message: "guess a number between 1 to 10",
         type: 'number',
         name: "guessNumber"
     }
